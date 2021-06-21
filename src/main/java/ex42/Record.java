@@ -1,6 +1,10 @@
 package ex42;
-
+/*
+ *  UCF COP3330 Summer 2021 Assignment 3 Solution
+ *  Copyright 2021 Ryan Doherty
+ */
 public class Record {
+    // Store first and last names and salary in an object
     String firstName;
     String lastName;
     int salary;

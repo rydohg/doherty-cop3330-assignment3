@@ -1,5 +1,8 @@
 package ex42;
-
+/*
+ *  UCF COP3330 Summer 2021 Assignment 3 Solution
+ *  Copyright 2021 Ryan Doherty
+ */
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
@@ -12,12 +15,14 @@ public class DataParserTest {
     @Test
     @DisplayName("Read Test")
     public void readTest(){
+        // Test if we can read the given file
         ArrayList<Record> records = DataParser.readRecords("src/main/java/ex42/exercise42_input.txt");
         assertNotNull(records);
     }
     @Test
     @DisplayName("Format Test")
     public void formatTest(){
+        // Tests known input against known output
         ArrayList<Record> records = DataParser.readRecords("src/main/java/ex42/exercise42_input.txt");
         String result = "Last      First     Salary\n" +
                 "--------------------------\n" +

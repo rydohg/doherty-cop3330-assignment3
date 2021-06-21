@@ -1,5 +1,8 @@
 package ex43;
-
+/*
+ *  UCF COP3330 Summer 2021 Assignment 3 Solution
+ *  Copyright 2021 Ryan Doherty
+ */
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
@@ -15,6 +18,7 @@ public class WebsiteTest {
     @Test
     @DisplayName("CSS Dir")
     public void cssTest(){
+        // Test if CSS directory is made
         Website website = new Website(title, author);
         website.makeCSSFolder();
         File testFolder = new File(title + "/css");
@@ -24,6 +28,7 @@ public class WebsiteTest {
     @Test
     @DisplayName("JS Dir")
     public void jsTest(){
+        // Test if JS directory is made
         Website website = new Website(title, author);
         website.makeJSFolder();
         File testFolder = new File(title + "/js");
@@ -33,6 +38,7 @@ public class WebsiteTest {
     @Test
     @DisplayName("Generate Index")
     public void generateIndexTest(){
+        // Test if generated HTML has the title and author
         Website website = new Website(title, author);
         String index = website.generateIndex();
         assertTrue(index.contains(author));
@@ -41,6 +47,7 @@ public class WebsiteTest {
 
     @AfterEach
     void tearDown() {
+        // Delete any directories and files after each test (clean up)
         File css = new File(title + "/css");
         File js = new File(title + "/js");
         File html = new File(title + "/index.html");

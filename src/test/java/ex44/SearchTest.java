@@ -1,5 +1,8 @@
 package ex44;
-
+/*
+ *  UCF COP3330 Summer 2021 Assignment 3 Solution
+ *  Copyright 2021 Ryan Doherty
+ */
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
@@ -10,6 +13,7 @@ public class SearchTest {
     @Test
     @DisplayName("Parse Test")
     public void parseTest(){
+        // Test if the parse is successful and has the correct name in the first position
         String rawJSON = """
                 {
                     "products" : [
@@ -24,6 +28,7 @@ public class SearchTest {
     @Test
     @DisplayName("File Test")
     public void readFileTest(){
+        // Test if it can read the file
         assertNotNull(ProductSearch.readFile("src/main/java/ex44/exercise44_input.txt"));
     }
 }

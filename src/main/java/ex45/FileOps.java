@@ -1,11 +1,15 @@
 package ex45;
-
+/*
+ *  UCF COP3330 Summer 2021 Assignment 3 Solution
+ *  Copyright 2021 Ryan Doherty
+ */
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.Scanner;
 
+// FileOps object reads and writes to given input and output files
 public class FileOps {
     private final String inputFile;
     private final String outputFile;
@@ -16,6 +20,7 @@ public class FileOps {
     }
 
     public String readFile(){
+        // Read file and return null if it can't be read
         File file = new File(inputFile);
         StringBuilder content = new StringBuilder();
         try {
@@ -31,9 +36,12 @@ public class FileOps {
     }
 
     public boolean writeFile(String contents){
+        // Write given contents to file
         File file = new File(outputFile);
         try {
+            // Create file if it doesn't exist
             file.createNewFile();
+            // Write to new file
             FileWriter writer = new FileWriter(outputFile);
             writer.write(contents);
             writer.close();
