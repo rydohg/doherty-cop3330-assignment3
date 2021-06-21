@@ -16,14 +16,14 @@ public class DataParserTest {
     @DisplayName("Read Test")
     public void readTest(){
         // Test if we can read the given file
-        ArrayList<Record> records = DataParser.readRecords("src/main/java/ex42/exercise42_input.txt");
+        ArrayList<Record> records = DataParser.readRecords("exercise42_input.txt");
         assertNotNull(records);
     }
     @Test
     @DisplayName("Format Test")
     public void formatTest(){
         // Tests known input against known output
-        ArrayList<Record> records = DataParser.readRecords("src/main/java/ex42/exercise42_input.txt");
+        ArrayList<Record> records = DataParser.readRecords("exercise42_input.txt");
         String result = "Last      First     Salary\n" +
                 "--------------------------\n" +
                 "Mai      Ling     55900\n" +

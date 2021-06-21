@@ -13,7 +13,7 @@ public class WordFinder {
         String outputFilename = scanner.nextLine().trim();
 
         // Initialize FileOps
-        FileOps fileOperations = new FileOps("src/main/java/ex45/exercise45_input.txt", outputFilename);
+        FileOps fileOperations = new FileOps("exercise45_input.txt", outputFilename);
         // Read input file
         String inputFileContents = fileOperations.readFile();
         // Replace utilize with use

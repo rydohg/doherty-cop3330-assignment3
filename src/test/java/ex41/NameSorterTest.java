@@ -17,14 +17,14 @@ public class NameSorterTest {
     public void fileOpenTest(){
         // Test if we can open the file
         System.out.println(System.getProperty("user.dir"));
-        assertNotNull(FileOps.readFile("src/main/java/ex41/exercise41_input.txt"));
+        assertNotNull(FileOps.readFile("exercise41_input.txt"));
     }
 
     @Test
     @DisplayName("File Write")
     public void fileWriteTest(){
         // Test if we can write to the output
-        assertTrue(FileOps.writeFile("src/main/java/ex41/exercise41_output.txt", "test"));
+        assertTrue(FileOps.writeFile("exercise41_output.txt", "test"));
     }
 
     @Test

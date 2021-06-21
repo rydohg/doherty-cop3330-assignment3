@@ -13,7 +13,7 @@ import java.util.Scanner;
 public class FrequencyFinder {
     public static void main(String[] args) {
         // Read input file
-        String inputFile = readFile("src/main/java/ex46/exercise46_input.txt");
+        String inputFile = readFile("exercise46_input.txt");
         // Find frequencies
         ArrayList<WordFrequency> frequencies = getFrequencies(inputFile);
 

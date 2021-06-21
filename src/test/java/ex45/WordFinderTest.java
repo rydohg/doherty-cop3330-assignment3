@@ -13,7 +13,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 public class WordFinderTest {
     private String testOutputFileName = "testOut.txt";
-    private String testInputFileName = "src/main/java/ex45/exercise45_input.txt";
+    private String testInputFileName = "exercise45_input.txt";
 
     @Test
     @DisplayName("Read File Test")

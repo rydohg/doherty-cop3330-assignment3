@@ -15,14 +15,14 @@ public class FrequencyTest {
     @DisplayName("Read file test")
     public void readFileTest(){
         // Test if we can read the given file
-        assertNotNull(FrequencyFinder.readFile("src/main/java/ex46/exercise46_input.txt"));
+        assertNotNull(FrequencyFinder.readFile("exercise46_input.txt"));
     }
 
     @Test
     @DisplayName("Sorted Frequencies Test")
     public void sortedTest(){
         // Test if we can find the frequencies and if they are in the proper order
-        String input = FrequencyFinder.readFile("src/main/java/ex46/exercise46_input.txt");
+        String input = FrequencyFinder.readFile("exercise46_input.txt");
         ArrayList<WordFrequency> frequencies = FrequencyFinder.getFrequencies(input);
 
         assertTrue(frequencies.get(0).frequency > frequencies.get(frequencies.size() - 1).frequency);
@@ -33,7 +33,7 @@ public class FrequencyTest {
     @DisplayName("\"badger\" Test")
     public void badgerTest(){
         // Test if it generates the correct frequency for "badger"
-        String input = FrequencyFinder.readFile("src/main/java/ex46/exercise46_input.txt");
+        String input = FrequencyFinder.readFile("exercise46_input.txt");
         ArrayList<WordFrequency> frequencies = FrequencyFinder.getFrequencies(input);
 
         assertEquals(frequencies.get(0).frequency, 7);

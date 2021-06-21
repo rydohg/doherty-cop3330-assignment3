@@ -9,7 +9,7 @@ import java.util.Collections;
 public class NameSorter {
     public static void main(String[] args) {
         // Read names from file
-        ArrayList<String> names = FileOps.readFile("src/main/java/ex41/exercise41_input.txt");
+        ArrayList<String> names = FileOps.readFile("exercise41_input.txt");
         if (names != null) {
             // Sort names
             String sortedNames = sort(names);

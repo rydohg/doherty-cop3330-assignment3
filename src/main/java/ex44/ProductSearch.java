@@ -12,7 +12,7 @@ import java.util.Scanner;
 public class ProductSearch {
     public static void main(String[] args) {
         // Read file containing JSON
-        String rawJSON = readFile("src/main/java/ex44/exercise44_input.txt");
+        String rawJSON = readFile("exercise44_input.txt");
         // Parse JSON file
         Product[] products = parseJSON(rawJSON);
         // Prompt user for product names until one is found

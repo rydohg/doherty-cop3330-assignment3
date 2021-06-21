@@ -11,7 +11,7 @@ import java.util.Scanner;
 public class DataParser {
     public static void main(String[] args) {
         // Read from file
-        ArrayList<Record> records = readRecords("src/main/java/ex42/exercise42_input.txt");
+        ArrayList<Record> records = readRecords("exercise42_input.txt");
         // Print formatted records
         System.out.println(formatRecords(records));
     }

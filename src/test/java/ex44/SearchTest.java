@@ -29,6 +29,6 @@ public class SearchTest {
     @DisplayName("File Test")
     public void readFileTest(){
         // Test if it can read the file
-        assertNotNull(ProductSearch.readFile("src/main/java/ex44/exercise44_input.txt"));
+        assertNotNull(ProductSearch.readFile("exercise44_input.txt"));
     }
 }
