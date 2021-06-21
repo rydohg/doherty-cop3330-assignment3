@@ -1,0 +1,14 @@
+@startuml
+class FrequencyFinder {
+    String inputFile
+    String readFile()
+    ArrayList<WordFrequency> getFrequencies(String input)
+}
+
+object WordFrequency {
+    String word
+    int frequency
+}
+
+FrequencyFinder <-- WordFrequency
+@enduml

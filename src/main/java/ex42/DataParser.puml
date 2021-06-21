@@ -1,0 +1,10 @@
+@startuml
+class Record {
+    String name
+    int salary
+}
+
+class DataParser {
+    readData(): ArrayList<Record>
+}
+@enduml

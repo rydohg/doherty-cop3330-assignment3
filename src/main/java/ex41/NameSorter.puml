@@ -1,0 +1,13 @@
+@startuml
+class NameSorter {
+    ArrayList<String> names
+    sort(ArrayList<String> names)
+}
+
+class FileOps {
+ readFile()
+ writeFile()
+}
+
+NameSorter <-- FileOps
+@enduml

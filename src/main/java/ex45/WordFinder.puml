@@ -1,0 +1,16 @@
+@startuml
+class WordFinder {
+    FileOps fileOperations
+    replaceWordInString(String input): String
+}
+
+class FileOps {
+    String inputFile
+    String outputFile
+    setOutput(String path)
+    readFile()
+    writeToFile()
+}
+
+WordFinder --> FileOps
+@enduml
